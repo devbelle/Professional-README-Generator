@@ -1,16 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-//function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-//function renderLicenseSection(license) {}
-
-//For rendering the license below, I combined the top functiions together into one singular function.
+//For rendering the license below, I combined the top functions together into one singular function.
 function renderLicense(license) {
   //In the If statements, they will pull the license, badge, and link to the licenses.
   if(license === 'Apache 2.0') {
@@ -31,13 +19,9 @@ function renderLicense(license) {
 }
 
 
-// TODO: Create a function to generate markdown for README
-//function generateMarkdown(data) {
-  //return `# ${data.title}
 
-//`;
-//}
 function generateMarkdown(data) {
+  //READE script below. Each section has the coressponding data. name based on the console log input from the user.
   return `# ${data.title}
 
   ## Description
@@ -97,6 +81,7 @@ function generateMarkdown(data) {
 `;
 }
 
+//Links the inquirer module exports with generateMarkdown js file
 module.exports = generateMarkdown;
 
 
