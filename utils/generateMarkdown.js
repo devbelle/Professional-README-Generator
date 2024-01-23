@@ -32,10 +32,71 @@ function renderLicense(license) {
 
 
 // TODO: Create a function to generate markdown for README
+//function generateMarkdown(data) {
+  //return `# ${data.title}
+
+//`;
+//}
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ## Description
+  - ${data.description}
+
+  ## Table of Contents
+
+  - [License](#license)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Features](#features)
+  - [Credits](#credits)
+  - [Tests](#test)
+  - [Questions](#questions)
+  - [How to contribute](#contribution)
+  
+  ## License
+  
+  - ${renderLicense(data.license)}
+
+  ## Installation
+  
+  To Install this application, please follow the steps below:
+  - ${data.install}
+
+  ## Usage
+
+  ![alt text](screenshot.png)
+
+  - ${data.usage}
+
+  ## Features
+
+  - ${data.features}
+
+  ## Credits
+
+  - ${data.credits}
+
+  ## Tests
+
+  - ${data.test}
+
+  ## Questions
+
+  - ${data.questions}
+
+  Email: ${data.email}
+  Github: [${data.github}](https://github.com/${data.github})
+
+  ## How to Contribute
+
+  - ${data.contribution}
+
+
 
 `;
 }
 
 module.exports = generateMarkdown;
+
+
